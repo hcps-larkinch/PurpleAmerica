@@ -1,4 +1,4 @@
-2012 US Presidential Election,Romney,Obama,Other,
+2012 US Presidential Election, Romney, Obama, Other,
 Alabama,1255925,795696,22717,
 Alaska,164676,122640,13179,
 Arizona,1233654,1025232,47673,
