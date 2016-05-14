@@ -43,8 +43,12 @@ public class DrawCountry {
                    xVal[j] = scan.nextDouble();
                    yVal[j] = scan.nextDouble();
                 }
-                StdDraw.polygon(xVal, yVal);
-            }
+                
+                StdDraw.polygon(xVal, yVal);  
+           
+        }
+       
+    
             else{
                 i = i - 1;
                 scan.next();

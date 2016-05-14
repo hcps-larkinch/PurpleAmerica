@@ -17,7 +17,7 @@ import javax.swing.JFrame;
  *
  * @author hcps-larkinch
  */
-public class Color {
+public class RedBlue  {
     
     public static void colorStates() throws FileNotFoundException{
         File file = new File("C:\\Users\\hcps-larkinch\\Documents\\Classes\\Programming\\DrawPrac\\src\\data\\USA2012.txt");
@@ -25,14 +25,15 @@ public class Color {
         File file2 = new File("C:\\Users\\hcps-larkinch\\Documents\\Classes\\Programming\\DrawPrac\\src\\data\\USA-county.txt");
         Scanner scan2 = new Scanner(file);
         int pointNum = 0;
-        double[] xVal = null;
+        double[] xVal;
         double[] yVal;
         int regionNum = scan.nextInt();
         
         scan.nextLine();
         
         for(int i=0; i < 51; i++){
-           scan.next();
+           scan.next(); 
+           int j;
            int r_value = scan.nextInt();
            int d_value = scan.nextInt();
            int o_value = scan.nextInt();
@@ -42,7 +43,7 @@ public class Color {
             if(scan.hasNextInt() == true){
                 pointNum = scan.nextInt();
                 
-                for(int j = 0; j < pointNum; j++){
+                for(j = 0; j < pointNum; j++){
                    xVal[j] = scan.nextDouble();
                    yVal[j] = scan.nextDouble();
                 }
@@ -54,21 +55,26 @@ public class Color {
             }
             
            if(r_value > d_value && r_value > o_value){
-               //StdDraw.setPenColor(Color.RED);
                StdDraw.setPenColor(java.awt.Color.red);
-               StdDraw.filledPolygon(xVal, yVal);
-           
+               //StdDraw.filledPolygon(xVal[j], yVal[j]);
+
            }
            
            else if(d_value > r_value && d_value > o_value){
                //make state blue
+               StdDraw.setPenColor(java.awt.Color.blue);
+               StdDraw.filledPolygon(xVal, yVal);
            }
            else{
                //make state green
+               StdDraw.setPenColor(java.awt.Color.green);
+               StdDraw.filledPolygon(xVal, yVal);
            }
+           
         }
        
     }
+        
     }
     
 }

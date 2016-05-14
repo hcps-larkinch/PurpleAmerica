@@ -22,6 +22,10 @@ import java.util.Scanner;
  */
 public class PoliticalMap extends DrawCountry{
     public static void main(String[] args) throws FileNotFoundException{
-            drawCountry();
+            DrawCountry test1 = new DrawCountry();
+            test1.drawCountry();
+            
+            
+            
     }
 }//Real
