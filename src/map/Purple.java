@@ -35,7 +35,7 @@ public class Purple {
            
            int total = red + blue + green;
            
-           int[] rgbValue = {(red/total),(green/total), (blue/total)};
+           int[] rgbValue = {(red/total * 100) ,(green/total * 100) , (blue/total * 100)};
            System.out.println(rgbValue);
         }
     
