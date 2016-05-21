@@ -33,7 +33,6 @@ public class DrawCountry {
             double yMin = scan3.nextDouble();
             double xMax = scan3.nextDouble();
             scan2.nextDouble();
-            scan2.nextDouble();
             double yMax = scan2.nextDouble();
             int regionNum = scan.nextInt();
             StdDraw.setXscale(xMin, xMax);
