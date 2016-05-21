@@ -20,14 +20,21 @@ public class DrawCountry {
     
         public static void drawCountry() throws FileNotFoundException{
             File file = new File("C:\\Users\\hcps-larkinch\\Documents\\Classes\\Programming\\DrawPrac\\src\\data\\USA-county.txt");
+            File file2 = new File("C:\\Users\\hcps-larkinch\\Documents\\Classes\\Programming\\DrawPrac\\src\\data\\AK.txt");
+            File file3 = new File("C:\\Users\\hcps-larkinch\\Documents\\Classes\\Programming\\DrawPrac\\src\\data\\HI.txt");
             Scanner scan = new Scanner(file);
+            Scanner scan2 = new Scanner(file);
+            Scanner scan3 = new Scanner(file);
             StdDraw.setCanvasSize(1200, 650);
             StdDraw.setPenRadius(0.002);
             StdDraw.setPenColor(Color.BLACK);
-            double xMin = scan.nextDouble();
-            double yMin = scan.nextDouble();
-            double xMax = scan.nextDouble();
-            double yMax = scan.nextDouble();
+            double xMin = scan2.nextDouble();
+            scan3.nextDouble();
+            double yMin = scan3.nextDouble();
+            double xMax = scan3.nextDouble();
+            scan2.nextDouble();
+            scan2.nextDouble();
+            double yMax = scan2.nextDouble();
             int regionNum = scan.nextInt();
             StdDraw.setXscale(xMin, xMax);
             StdDraw.setYscale(yMin, yMax);
