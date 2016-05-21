@@ -38,6 +38,43 @@ public class Purple {
            int[] rgbValue = {(red/total * 100) ,(green/total * 100) , (blue/total * 100)};
            System.out.println(rgbValue);
         }
+        
+        File file2 = new File("C:\\Users\\hcps-larkinch\\Documents\\Classes\\Programming\\DrawPrac\\src\\data\\USA2012.txt");
+        Scanner scan2 = new Scanner(file);  
+        File file3 = new File("C:\\Users\\hcps-larkinch\\Documents\\Classes\\Programming\\DrawPrac\\src\\data\\USA-county.txt");
+        Scanner scan3 = new Scanner(file);
+        int pointNum = 0;
+        double[] xVal;
+        double[] yVal;
+        int regionNum = scan2.nextInt();
+        
+        scan2.nextLine();
+        
+        for(int i=0; i < 51; i++){
+           scan2.next(); 
+           int j;
+           int r_value = scan2.nextInt();
+           int d_value = scan2.nextInt();
+           int o_value = scan2.nextInt();
+           xVal = new double[pointNum];
+           yVal = new double[pointNum];
+            for(int f = 0; f < regionNum; f++){
+            if(scan.hasNextInt() == true){
+                pointNum = scan2.nextInt();
+                
+                for(j = 0; j < pointNum; j++){
+                   xVal[j] = scan2.nextDouble();
+                   yVal[j] = scan2.nextDouble();
+                }
+                
+            }
+            else{
+                f = f - 1;
+                scan2.next();
+            }
+            
     
-}
+            }
+        }
+    }
 }
